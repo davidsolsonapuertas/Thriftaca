@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BFF8E3D27404D5D004AD201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E3C27404D5D004AD201 /* AppDelegate.swift */; };
+		7BFF8E3F27404D5D004AD201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E3E27404D5D004AD201 /* SceneDelegate.swift */; };
+		7BFF8E4127404D5D004AD201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E4027404D5D004AD201 /* ViewController.swift */; };
+		7BFF8E4427404D5D004AD201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF8E4227404D5D004AD201 /* Main.storyboard */; };
+		7BFF8E4627404D5F004AD201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF8E4527404D5F004AD201 /* Assets.xcassets */; };
+		7BFF8E4927404D5F004AD201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF8E4727404D5F004AD201 /* LaunchScreen.storyboard */; };
+		7BFF8E5427404D5F004AD201 /* ThriftacaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E5327404D5F004AD201 /* ThriftacaTests.swift */; };
+		7BFF8E5E27404D5F004AD201 /* ThriftacaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E5D27404D5F004AD201 /* ThriftacaUITests.swift */; };
+		7BFF8E6027404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E5F27404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BFF8E5027404D5F004AD201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BFF8E3127404D5D004AD201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BFF8E3827404D5D004AD201;
+			remoteInfo = Thriftaca;
+		};
+		7BFF8E5A27404D5F004AD201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BFF8E3127404D5D004AD201 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BFF8E3827404D5D004AD201;
+			remoteInfo = Thriftaca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BFF8E3927404D5D004AD201 /* Thriftaca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thriftaca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFF8E3C27404D5D004AD201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BFF8E3E27404D5D004AD201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7BFF8E4027404D5D004AD201 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BFF8E4327404D5D004AD201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BFF8E4527404D5F004AD201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BFF8E4827404D5F004AD201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BFF8E4A27404D5F004AD201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BFF8E4F27404D5F004AD201 /* ThriftacaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriftacaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFF8E5327404D5F004AD201 /* ThriftacaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftacaTests.swift; sourceTree = "<group>"; };
+		7BFF8E5927404D5F004AD201 /* ThriftacaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThriftacaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFF8E5D27404D5F004AD201 /* ThriftacaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftacaUITests.swift; sourceTree = "<group>"; };
+		7BFF8E5F27404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftacaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BFF8E3627404D5D004AD201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BFF8E4C27404D5F004AD201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BFF8E5627404D5F004AD201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BFF8E3027404D5D004AD201 = {
+			isa = PBXGroup;
+			children = (
+				7BFF8E3B27404D5D004AD201 /* Thriftaca */,
+				7BFF8E5227404D5F004AD201 /* ThriftacaTests */,
+				7BFF8E5C27404D5F004AD201 /* ThriftacaUITests */,
+				7BFF8E3A27404D5D004AD201 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BFF8E3A27404D5D004AD201 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BFF8E3927404D5D004AD201 /* Thriftaca.app */,
+				7BFF8E4F27404D5F004AD201 /* ThriftacaTests.xctest */,
+				7BFF8E5927404D5F004AD201 /* ThriftacaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BFF8E3B27404D5D004AD201 /* Thriftaca */ = {
+			isa = PBXGroup;
+			children = (
+				7BFF8E3C27404D5D004AD201 /* AppDelegate.swift */,
+				7BFF8E3E27404D5D004AD201 /* SceneDelegate.swift */,
+				7BFF8E4027404D5D004AD201 /* ViewController.swift */,
+				7BFF8E4227404D5D004AD201 /* Main.storyboard */,
+				7BFF8E4527404D5F004AD201 /* Assets.xcassets */,
+				7BFF8E4727404D5F004AD201 /* LaunchScreen.storyboard */,
+				7BFF8E4A27404D5F004AD201 /* Info.plist */,
+			);
+			path = Thriftaca;
+			sourceTree = "<group>";
+		};
+		7BFF8E5227404D5F004AD201 /* ThriftacaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BFF8E5327404D5F004AD201 /* ThriftacaTests.swift */,
+			);
+			path = ThriftacaTests;
+			sourceTree = "<group>";
+		};
+		7BFF8E5C27404D5F004AD201 /* ThriftacaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BFF8E5D27404D5F004AD201 /* ThriftacaUITests.swift */,
+				7BFF8E5F27404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift */,
+			);
+			path = ThriftacaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BFF8E3827404D5D004AD201 /* Thriftaca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BFF8E6327404D5F004AD201 /* Build configuration list for PBXNativeTarget "Thriftaca" */;
+			buildPhases = (
+				7BFF8E3527404D5D004AD201 /* Sources */,
+				7BFF8E3627404D5D004AD201 /* Frameworks */,
+				7BFF8E3727404D5D004AD201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thriftaca;
+			productName = Thriftaca;
+			productReference = 7BFF8E3927404D5D004AD201 /* Thriftaca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BFF8E4E27404D5F004AD201 /* ThriftacaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BFF8E6627404D5F004AD201 /* Build configuration list for PBXNativeTarget "ThriftacaTests" */;
+			buildPhases = (
+				7BFF8E4B27404D5F004AD201 /* Sources */,
+				7BFF8E4C27404D5F004AD201 /* Frameworks */,
+				7BFF8E4D27404D5F004AD201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BFF8E5127404D5F004AD201 /* PBXTargetDependency */,
+			);
+			name = ThriftacaTests;
+			productName = ThriftacaTests;
+			productReference = 7BFF8E4F27404D5F004AD201 /* ThriftacaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BFF8E5827404D5F004AD201 /* ThriftacaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BFF8E6927404D5F004AD201 /* Build configuration list for PBXNativeTarget "ThriftacaUITests" */;
+			buildPhases = (
+				7BFF8E5527404D5F004AD201 /* Sources */,
+				7BFF8E5627404D5F004AD201 /* Frameworks */,
+				7BFF8E5727404D5F004AD201 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BFF8E5B27404D5F004AD201 /* PBXTargetDependency */,
+			);
+			name = ThriftacaUITests;
+			productName = ThriftacaUITests;
+			productReference = 7BFF8E5927404D5F004AD201 /* ThriftacaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BFF8E3127404D5D004AD201 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					7BFF8E3827404D5D004AD201 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					7BFF8E4E27404D5F004AD201 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 7BFF8E3827404D5D004AD201;
+					};
+					7BFF8E5827404D5F004AD201 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 7BFF8E3827404D5D004AD201;
+					};
+				};
+			};
+			buildConfigurationList = 7BFF8E3427404D5D004AD201 /* Build configuration list for PBXProject "Thriftaca" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BFF8E3027404D5D004AD201;
+			productRefGroup = 7BFF8E3A27404D5D004AD201 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BFF8E3827404D5D004AD201 /* Thriftaca */,
+				7BFF8E4E27404D5F004AD201 /* ThriftacaTests */,
+				7BFF8E5827404D5F004AD201 /* ThriftacaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BFF8E3727404D5D004AD201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFF8E4927404D5F004AD201 /* LaunchScreen.storyboard in Resources */,
+				7BFF8E4627404D5F004AD201 /* Assets.xcassets in Resources */,
+				7BFF8E4427404D5D004AD201 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BFF8E4D27404D5F004AD201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BFF8E5727404D5F004AD201 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BFF8E3527404D5D004AD201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFF8E4127404D5D004AD201 /* ViewController.swift in Sources */,
+				7BFF8E3D27404D5D004AD201 /* AppDelegate.swift in Sources */,
+				7BFF8E3F27404D5D004AD201 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BFF8E4B27404D5F004AD201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFF8E5427404D5F004AD201 /* ThriftacaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BFF8E5527404D5F004AD201 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BFF8E5E27404D5F004AD201 /* ThriftacaUITests.swift in Sources */,
+				7BFF8E6027404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BFF8E5127404D5F004AD201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BFF8E3827404D5D004AD201 /* Thriftaca */;
+			targetProxy = 7BFF8E5027404D5F004AD201 /* PBXContainerItemProxy */;
+		};
+		7BFF8E5B27404D5F004AD201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BFF8E3827404D5D004AD201 /* Thriftaca */;
+			targetProxy = 7BFF8E5A27404D5F004AD201 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BFF8E4227404D5D004AD201 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BFF8E4327404D5D004AD201 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BFF8E4727404D5F004AD201 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BFF8E4827404D5F004AD201 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BFF8E6127404D5F004AD201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BFF8E6227404D5F004AD201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BFF8E6427404D5F004AD201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWGFR4U6B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thriftaca/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSIntro.Thriftaca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BFF8E6527404D5F004AD201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWGFR4U6B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thriftaca/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSIntro.Thriftaca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BFF8E6727404D5F004AD201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWGFR4U6B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSIntro.ThriftacaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thriftaca.app/Thriftaca";
+			};
+			name = Debug;
+		};
+		7BFF8E6827404D5F004AD201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWGFR4U6B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSIntro.ThriftacaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thriftaca.app/Thriftaca";
+			};
+			name = Release;
+		};
+		7BFF8E6A27404D5F004AD201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWGFR4U6B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSIntro.ThriftacaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thriftaca;
+			};
+			name = Debug;
+		};
+		7BFF8E6B27404D5F004AD201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HWGFR4U6B6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iOSIntro.ThriftacaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Thriftaca;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BFF8E3427404D5D004AD201 /* Build configuration list for PBXProject "Thriftaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BFF8E6127404D5F004AD201 /* Debug */,
+				7BFF8E6227404D5F004AD201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BFF8E6327404D5F004AD201 /* Build configuration list for PBXNativeTarget "Thriftaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BFF8E6427404D5F004AD201 /* Debug */,
+				7BFF8E6527404D5F004AD201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BFF8E6627404D5F004AD201 /* Build configuration list for PBXNativeTarget "ThriftacaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BFF8E6727404D5F004AD201 /* Debug */,
+				7BFF8E6827404D5F004AD201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BFF8E6927404D5F004AD201 /* Build configuration list for PBXNativeTarget "ThriftacaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BFF8E6A27404D5F004AD201 /* Debug */,
+				7BFF8E6B27404D5F004AD201 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BFF8E3127404D5D004AD201 /* Project object */;
+}
