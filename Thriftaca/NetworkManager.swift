@@ -35,6 +35,7 @@ class NetworkManager {
                     let jsonDecoder = JSONDecoder()
                     if let response = try? jsonDecoder.decode(Result.self, from: data) {
                         completion(response.url)
+                        print()
                     }
                 case .failure(let error):
                     print(error)
