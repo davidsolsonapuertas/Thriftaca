@@ -1,0 +1,6 @@
+framework module Pods_Thriftaca_ThriftacaUITests {
+  umbrella header "Pods-Thriftaca-ThriftacaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
