@@ -1,13 +1,20 @@
 PODS:
+<<<<<<< HEAD
   - Alamofire (5.4.4)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+=======
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
   - SnapKit
 
 SPEC REPOS:
   trunk:
+<<<<<<< HEAD
     - Alamofire
     - SnapKit
 
@@ -16,5 +23,13 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
 PODFILE CHECKSUM: 5034add66285123fd0ead7e2af173694e1f181ca
+=======
+    - SnapKit
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 69121113d2a03a5f4869d84946563273bb378d6c
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 
 COCOAPODS: 1.11.2

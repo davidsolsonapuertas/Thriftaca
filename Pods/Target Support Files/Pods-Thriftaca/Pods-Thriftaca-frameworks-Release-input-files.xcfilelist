@@ -1,3 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-Thriftaca/Pods-Thriftaca-frameworks.sh
+<<<<<<< HEAD
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

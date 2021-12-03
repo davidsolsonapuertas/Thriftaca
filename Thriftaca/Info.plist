@@ -2,10 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+<<<<<<< HEAD
 	<key>NSCameraUsageDescription</key>
 	<string>This app wants to take pictures</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app wants to use your photos</string>
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

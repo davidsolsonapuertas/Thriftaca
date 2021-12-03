@@ -176,11 +176,17 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+<<<<<<< HEAD
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+=======
+  install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

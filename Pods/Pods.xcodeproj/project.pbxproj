@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		02621C4B82398D0657F474E21493A3A2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C10EACE3817D421601E1C79EAB08 /* HTTPMethod.swift */; };
 		02DB462B121245593CE653B9B377F970 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1666616347D104EE76FABE341EFA033 /* Protected.swift */; };
 		0B399DCF32F8FE4F09B03B6E7B65E0D1 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D1086E33C42FFAC34F3EB23F23F12D /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,19 +106,78 @@
 			remoteInfo = "Pods-Thriftaca";
 		};
 		69BABE2D24A7ECC93F19CFBE19960D7B /* PBXContainerItemProxy */ = {
+=======
+		144DA93A55A598F5197F10C729FBDD69 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
+		17BE0F4E51B0FB968125F1A520607FD8 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */; };
+		1E9EEA756F2774D73347F1660EEFE3E9 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
+		25AF0945BF70CA1896A3905AFB664EA5 /* Pods-Thriftaca-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F29CC7B66D647DF5C1F7A9487A7130 /* Pods-Thriftaca-dummy.m */; };
+		274DF0E2BF04F6F4F9F1E70CF513A4F2 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
+		32A66E0C7C5753FEBCCDE3D3B4A617FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3B60C02F6E42FD06B128473E00A94224 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
+		3CD5FAFC746A76D73C3F501734199DFF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
+		3DEDFA52B3A196F6D3E1F0937617628A /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
+		43863B6D6A0E47B6648BB7B469736EDD /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
+		4CA13A0527BC57DE2C54A0F3B5ED8652 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
+		51A4A1046676D304410544EB56732A49 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
+		5E8BA529DFB4529006967624044FEC1C /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
+		62F299B4704A7C95FB5866C6CDE2E2FD /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
+		6B040302D6E758F4440DF88E9F464B84 /* Pods-ThriftacaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F34EA65ADAC3F83C0D9CEEAA41A6CB66 /* Pods-ThriftacaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F5B5454FB6931D0CC8475D0330B61DC /* Pods-Thriftaca-ThriftacaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 684C88FE35AB7E796DF36F4B4A166441 /* Pods-Thriftaca-ThriftacaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7580FAAB1BDA52F5A969E5571D1A5973 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
+		7764AA5F6BBFC6ECE43959923DD007D3 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
+		825062025906CE93C5D124E1FD9A811E /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
+		8449EB1DFD43E222D687D5A8D2088D2D /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
+		8C6546C1EF4F153DF3795CC6FE189E5B /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
+		8FD9CD608C4EAAFDE6AC7B8B9EF0FF5E /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */; };
+		90FD5AE525E138A473723FD79AF73273 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */; };
+		9547ECAB98840DC51F91B6B872EB7ECE /* Pods-Thriftaca-ThriftacaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1501D8033BB5BF709E6EB5BE0933F126 /* Pods-Thriftaca-ThriftacaUITests-dummy.m */; };
+		968B4874A9F12D67C8B901136C9C8157 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */; };
+		A0F754C88A64972A40A9008B0AD52109 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
+		A4467357581E8345DD348683CC4111AF /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A53D3AF15CE8D348306EF11619C5D166 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
+		B543FD108C1C6AF6129CB4991553218B /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */; };
+		BC57BAB24FAEDFED86F4A206DC7F7F73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BD333CDBCF5D2FD55920336FC271DF33 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
+		BEBF920FEB959B46A76BAADF22E5CD15 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
+		C61D3BC32A28A405C934C00039AD2583 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
+		C7BACBEF0959B0891CC635E8B247760B /* Pods-Thriftaca-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F41F4DCF60C2607E5D3A6075E2DCA5 /* Pods-Thriftaca-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB194156C900B767B0160AF72EDF354D /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
+		CB8E4BF0D710970BE2CB4C87ED1043E4 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
+		CCA22C9F421C9E8C13009947816D8C82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D13D417B236E736EEAE7217B5CE3EC5C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
+		D59C2826AD288ECFF576B2AFA312716C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
+		E04715EB2692126E1415B8070C1A17C7 /* Pods-ThriftacaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CFFEF884CEB4938BDD649F6D066E1E /* Pods-ThriftacaTests-dummy.m */; };
+		E36244E8BF4AC941E82DAF16DDF4BBC2 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
+		E8EAADACF3BAE33BDECBC7214EAE9CD2 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
+		EE6C364198A763EBBF49237035D86439 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
+		F10586462FB54CEA169A1A7A469A926D /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
+		F24D06C23DAB2F52A30C886A7A8177C7 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
+		F2C817C166B2DE613222C41015A586C9 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
+		F343BA4E457FFDB0165492AECAEF0BCC /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */; };
+		FF4CA741ACD988AF0C06A701820378C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47BC9E7BA9CDD216E5724CFCAD8A2451 /* PBXContainerItemProxy */ = {
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
+<<<<<<< HEAD
 		8E93952D66858AC0FA33D0BB5E8403CF /* PBXContainerItemProxy */ = {
+=======
+		548B971C18C30D02449B9867A747ADC1 /* PBXContainerItemProxy */ = {
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
+<<<<<<< HEAD
 		ACC111913500EB6A5EF05786663D79D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -131,10 +191,19 @@
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
+=======
+		F8F0C58F816A12836D6999FEA70386E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1CB1A2413AA9086E7D5115203B63BF9;
+			remoteInfo = "Pods-Thriftaca";
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		004448FD9B091214090D6F2652E8BB04 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		012419EEB0890EE670345AD96D3659E1 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		01DFEF23E3C16033A22EEFD23FB8638E /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
@@ -266,6 +335,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+=======
+		0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		06F29CC7B66D647DF5C1F7A9487A7130 /* Pods-Thriftaca-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thriftaca-dummy.m"; sourceTree = "<group>"; };
+		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		136EBBC9897756B55B5190CC34C1ADC4 /* Pods-Thriftaca-ThriftacaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thriftaca-ThriftacaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		1501D8033BB5BF709E6EB5BE0933F126 /* Pods-Thriftaca-ThriftacaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Thriftaca-ThriftacaUITests-dummy.m"; sourceTree = "<group>"; };
+		1A5A2B02A140BAA6A2C87C024315E3D9 /* Pods-ThriftacaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ThriftacaTests.modulemap"; sourceTree = "<group>"; };
+		1BA1AF90FCD8E2D4B085279A98B206E4 /* Pods-Thriftaca-ThriftacaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thriftaca-ThriftacaUITests-Info.plist"; sourceTree = "<group>"; };
+		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		2A2549AB21BEC4AC3F1A04A812ACB642 /* Pods-Thriftaca.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Thriftaca.modulemap"; sourceTree = "<group>"; };
+		387453C9354C7AF8CE5C5A6BC3F48ECA /* Pods-Thriftaca-ThriftacaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thriftaca-ThriftacaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		396B2C2FF96D8423F0CFCD62E1991157 /* Pods-Thriftaca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thriftaca.debug.xcconfig"; sourceTree = "<group>"; };
+		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		3E8472146448F99A1FA8349A06BFD661 /* Pods-ThriftacaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThriftacaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		42ED2D62DA083E33EB1385A582D6C6D1 /* Pods-Thriftaca-ThriftacaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thriftaca-ThriftacaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		4AA3A6C2AD7EC40E43B886EB2A4F07CC /* Pods-Thriftaca-ThriftacaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thriftaca-ThriftacaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		674017274D4518AB67B77DF0B5D167DF /* Pods-Thriftaca-ThriftacaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thriftaca-ThriftacaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		684C88FE35AB7E796DF36F4B4A166441 /* Pods-Thriftaca-ThriftacaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thriftaca-ThriftacaUITests-umbrella.h"; sourceTree = "<group>"; };
+		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		6B5FBBB9756ABCCD79DDD2AD662868AE /* Pods-ThriftacaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThriftacaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D3A918D49B80100D75CC6C40D75005D /* Pods-Thriftaca-ThriftacaUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Thriftaca-ThriftacaUITests"; path = Pods_Thriftaca_ThriftacaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		7F7256A8B1E2489CEC65855B3E87A09E /* Pods-Thriftaca-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Thriftaca-frameworks.sh"; sourceTree = "<group>"; };
+		855BE644F835216D1D175437A9248810 /* Pods-ThriftacaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThriftacaTests-Info.plist"; sourceTree = "<group>"; };
+		85C5A0AD814C163C25154E0CE7802406 /* Pods-ThriftacaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThriftacaTests.release.xcconfig"; sourceTree = "<group>"; };
+		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		9149AEAECC9CB955D8CD61B8540310AA /* Pods-Thriftaca-ThriftacaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Thriftaca-ThriftacaUITests.modulemap"; sourceTree = "<group>"; };
+		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		94649ABE6965309377D73C5EAAAB98E8 /* Pods-ThriftacaTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ThriftacaTests"; path = Pods_ThriftacaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		AF974992F5BC52A0BB87061A20C35793 /* Pods-Thriftaca-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thriftaca-acknowledgements.plist"; sourceTree = "<group>"; };
+		B247F70C58AAC4BA2922CDC224DE0C0D /* Pods-Thriftaca-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Thriftaca-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		C19E606A936537662FFDB7AD060FA995 /* Pods-Thriftaca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Thriftaca.release.xcconfig"; sourceTree = "<group>"; };
+		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		CB61C14E91EB5FA24A732F5BD8D0DC26 /* Pods-ThriftacaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThriftacaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB7804100D2EE4E1B77C6353B9BBDCEA /* Pods-Thriftaca-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Thriftaca-Info.plist"; sourceTree = "<group>"; };
+		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D81444F631421E9BAA9EA973F5798F69 /* Pods-Thriftaca */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Thriftaca"; path = Pods_Thriftaca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		E6F41F4DCF60C2607E5D3A6075E2DCA5 /* Pods-Thriftaca-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Thriftaca-umbrella.h"; sourceTree = "<group>"; };
+		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		F34EA65ADAC3F83C0D9CEEAA41A6CB66 /* Pods-ThriftacaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ThriftacaTests-umbrella.h"; sourceTree = "<group>"; };
+		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		F8CFFEF884CEB4938BDD649F6D066E1E /* Pods-ThriftacaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThriftacaTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		9B30433E568C40FCE04D5188A9715448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		A5BE0D340CF626E483087F0CBFDA80E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +437,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8367A4761BF65BE6B8817C5D1878B581 /* Foundation.framework in Frameworks */,
+=======
+		BCCEAA8A187D4B00AD75A7E6AFD847A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4CA741ACD988AF0C06A701820378C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A55B867B21846159909C3191605389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC57BAB24FAEDFED86F4A206DC7F7F73 /* Foundation.framework in Frameworks */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +466,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +484,8 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		1F6B44156513B2F0CB9C186B9A6C3CC3 /* Pods-Thriftaca-ThriftacaUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +530,7 @@
 			path = "Target Support Files/Pods-Thriftaca";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3EF1C408D4D6E4B56C8E0180955DD33D /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,11 +639,87 @@
 				3B06DC987BBFB17353745868A42CBF84 /* SnapKit-umbrella.h */,
 				C675CAE024FE8C74FF21534E66D39148 /* SnapKit.debug.xcconfig */,
 				CAAAE1B69E380BDBA068C5A251A87AA0 /* SnapKit.release.xcconfig */,
+=======
+		413A8B122099EBF9D9DDA2A9E610DF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D81444F631421E9BAA9EA973F5798F69 /* Pods-Thriftaca */,
+				6D3A918D49B80100D75CC6C40D75005D /* Pods-Thriftaca-ThriftacaUITests */,
+				94649ABE6965309377D73C5EAAAB98E8 /* Pods-ThriftacaTests */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */,
+				13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */,
+				250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */,
+				6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */,
+				CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */,
+				91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */,
+				A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */,
+				7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */,
+				549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */,
+				7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */,
+				474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */,
+				66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */,
+				09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */,
+				BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */,
+				3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */,
+				C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */,
+				141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */,
+				E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */,
+				E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */,
+				11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */,
+				91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */,
+				724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */,
+				F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */,
+				47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */,
+				F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */,
+				9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */,
+				2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */,
+				25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */,
+				A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */,
+				EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */,
+				56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */,
+				D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */,
+				F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */,
+				464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */,
+				D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */,
+				6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */,
+				843EFF0C650682C304D518A9092EE9FD /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		843EFF0C650682C304D518A9092EE9FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */,
+				E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */,
+				391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */,
+				E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */,
+				0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */,
+				7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */,
+				A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SnapKit";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		BFDC942C698F6CA5C9F5823755E38BFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,19 +730,34 @@
 				979486118B3E90C08386079D57962701 /* SnapKit */,
 			);
 			name = Products;
+=======
+		BA22F08D059965C9A09F78196176CEDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F02E3862C6E84203E8324D9D0088797 /* SnapKit */,
+			);
+			name = Pods;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+<<<<<<< HEAD
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				1E4C0914B40960F09A84163CACF56F54 /* Pods */,
 				BFDC942C698F6CA5C9F5823755E38BFC /* Products */,
+=======
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				BA22F08D059965C9A09F78196176CEDB /* Pods */,
+				413A8B122099EBF9D9DDA2A9E610DF06 /* Products */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				2442D86F2287F97C071AB9AD38840731 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		DCD700B9EFB20CA962AD4755766FFC86 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +771,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
+=======
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			sourceTree = "<group>";
 		};
 		F115EC860DD4C544EE31F93F5C782AE4 /* Pods-ThriftacaTests */ = {
@@ -540,6 +808,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		0A5486E5340473EF47A89F6E9883FFA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,6 +822,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B399DCF32F8FE4F09B03B6E7B65E0D1 /* Alamofire-umbrella.h in Headers */,
+=======
+		17965B5FBEBAD28B8B726F96A7515CF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5B5454FB6931D0CC8475D0330B61DC /* Pods-Thriftaca-ThriftacaUITests-umbrella.h in Headers */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,11 +840,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		BC3A51445E1248F951545C9212D59FAE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				937E4424A514492847E9154F20F61B4A /* Pods-Thriftaca-ThriftacaUITests-umbrella.h in Headers */,
+=======
+		BA2D19C4022055E6FD4F155C4FC99204 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7BACBEF0959B0891CC635E8B247760B /* Pods-Thriftaca-umbrella.h in Headers */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,18 +861,31 @@
 /* Begin PBXNativeTarget section */
 		00EC2CCBAE266FA40B7DD9CE3DD5F3F6 /* Pods-Thriftaca-ThriftacaUITests */ = {
 			isa = PBXNativeTarget;
+<<<<<<< HEAD
 			buildConfigurationList = 20AA1A08A5D7A458B1FEA90AC9496F18 /* Build configuration list for PBXNativeTarget "Pods-Thriftaca-ThriftacaUITests" */;
 			buildPhases = (
 				BC3A51445E1248F951545C9212D59FAE /* Headers */,
 				E825108C276BE38EED554CDD8CAA9602 /* Sources */,
 				A5BE0D340CF626E483087F0CBFDA80E7 /* Frameworks */,
 				82ED328B6CCA20FEDC0FC7C0176F321E /* Resources */,
+=======
+			buildConfigurationList = 2B787352D9A991E20FE3E1A6CAFF4255 /* Build configuration list for PBXNativeTarget "Pods-Thriftaca-ThriftacaUITests" */;
+			buildPhases = (
+				17965B5FBEBAD28B8B726F96A7515CF4 /* Headers */,
+				B254702AABBEC99935423713A65128F8 /* Sources */,
+				D3A55B867B21846159909C3191605389 /* Frameworks */,
+				DBB9C8BA6489460DB9C6C36C2CBCEE7D /* Resources */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				883CB5D8D86F871238E694647DDE9851 /* PBXTargetDependency */,
 				B86B8A5127D1157C6F6B7163C7E324BF /* PBXTargetDependency */,
+=======
+				8FE4FCED5B01E023271A56FB757AF253 /* PBXTargetDependency */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			name = "Pods-Thriftaca-ThriftacaUITests";
 			productName = Pods_Thriftaca_ThriftacaUITests;
@@ -610,7 +907,11 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
+<<<<<<< HEAD
 			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+=======
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			productType = "com.apple.product-type.framework";
 		};
 		41DA1456357B83C8D6BF47EBF70B8361 /* Pods-ThriftacaTests */ = {
@@ -625,7 +926,11 @@
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				AC0A69A1E2234CF9F8FD8FF9A39850ED /* PBXTargetDependency */,
+=======
+				8688E20C78E02B4083ECF05F6A363014 /* PBXTargetDependency */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			name = "Pods-ThriftacaTests";
 			productName = Pods_ThriftacaTests;
@@ -634,24 +939,38 @@
 		};
 		A1CB1A2413AA9086E7D5115203B63BF9 /* Pods-Thriftaca */ = {
 			isa = PBXNativeTarget;
+<<<<<<< HEAD
 			buildConfigurationList = E9CA4F4DCB9DBCD524BD8C2CDD78C647 /* Build configuration list for PBXNativeTarget "Pods-Thriftaca" */;
 			buildPhases = (
 				0A5486E5340473EF47A89F6E9883FFA4 /* Headers */,
 				8A1B647B6461F96900726855B3D58CE8 /* Sources */,
 				C8684C3B2F05D5C81C2612044A2D4306 /* Frameworks */,
 				BE8D22A26E29064F72A9A4F16087CC1F /* Resources */,
+=======
+			buildConfigurationList = A6E69270EC52CA1EABB2C07FC4392716 /* Build configuration list for PBXNativeTarget "Pods-Thriftaca" */;
+			buildPhases = (
+				BA2D19C4022055E6FD4F155C4FC99204 /* Headers */,
+				FAAEB24C5D942AF9B1FCFD1B02890844 /* Sources */,
+				BCCEAA8A187D4B00AD75A7E6AFD847A1 /* Frameworks */,
+				B4BA90C92D2990010CB0D6225DFEBBC3 /* Resources */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			buildRules = (
 			);
 			dependencies = (
+<<<<<<< HEAD
 				8079DD61AAC8DE3B2184ED4ADA4CE33C /* PBXTargetDependency */,
 				981AA4358CFAAE320045BFE6212D2A7D /* PBXTargetDependency */,
+=======
+				08DAB9BD2F372D771B450D4173724A20 /* PBXTargetDependency */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			name = "Pods-Thriftaca";
 			productName = Pods_Thriftaca;
 			productReference = D81444F631421E9BAA9EA973F5798F69 /* Pods-Thriftaca */;
 			productType = "com.apple.product-type.framework";
 		};
+<<<<<<< HEAD
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C98220D3187BF01A20E296DC128BED4 /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -670,6 +989,8 @@
 			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
 			productType = "com.apple.product-type.framework";
 		};
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -677,7 +998,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
+<<<<<<< HEAD
 				LastUpgradeCheck = 1240;
+=======
+				LastUpgradeCheck = 1300;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -688,11 +1013,18 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+<<<<<<< HEAD
 			productRefGroup = BFDC942C698F6CA5C9F5823755E38BFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+=======
+			productRefGroup = 413A8B122099EBF9D9DDA2A9E610DF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				A1CB1A2413AA9086E7D5115203B63BF9 /* Pods-Thriftaca */,
 				00EC2CCBAE266FA40B7DD9CE3DD5F3F6 /* Pods-Thriftaca-ThriftacaUITests */,
 				41DA1456357B83C8D6BF47EBF70B8361 /* Pods-ThriftacaTests */,
@@ -709,6 +1041,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		82ED328B6CCA20FEDC0FC7C0176F321E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -717,13 +1050,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		93ECA2D9F79614966DFA76280ABFEF67 /* Resources */ = {
+=======
+		B4BA90C92D2990010CB0D6225DFEBBC3 /* Resources */ = {
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		BE8D22A26E29064F72A9A4F16087CC1F /* Resources */ = {
+=======
+		DBB9C8BA6489460DB9C6C36C2CBCEE7D /* Resources */ = {
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -784,6 +1124,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 		5FE9836A67EA3E51CA889A1AB95BC874 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -840,6 +1181,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDCC3B251EAF480E72AE0BF844C27CAC /* Pods-Thriftaca-ThriftacaUITests-dummy.m in Sources */,
+=======
+		B254702AABBEC99935423713A65128F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9547ECAB98840DC51F91B6B872EB7ECE /* Pods-Thriftaca-ThriftacaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAEB24C5D942AF9B1FCFD1B02890844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25AF0945BF70CA1896A3905AFB664EA5 /* Pods-Thriftaca-dummy.m in Sources */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +1210,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+<<<<<<< HEAD
 		8079DD61AAC8DE3B2184ED4ADA4CE33C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -883,6 +1240,25 @@
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
 			targetProxy = 69BABE2D24A7ECC93F19CFBE19960D7B /* PBXContainerItemProxy */;
+=======
+		08DAB9BD2F372D771B450D4173724A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 548B971C18C30D02449B9867A747ADC1 /* PBXContainerItemProxy */;
+		};
+		8688E20C78E02B4083ECF05F6A363014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Thriftaca";
+			target = A1CB1A2413AA9086E7D5115203B63BF9 /* Pods-Thriftaca */;
+			targetProxy = F8F0C58F816A12836D6999FEA70386E9 /* PBXContainerItemProxy */;
+		};
+		8FE4FCED5B01E023271A56FB757AF253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 47BC9E7BA9CDD216E5724CFCAD8A2451 /* PBXContainerItemProxy */;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		};
 /* End PBXTargetDependency section */
 
@@ -925,7 +1301,11 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		37EF4E4C8AE65DB022443CBD3B765AD3 /* Release */ = {
+=======
+		13C3E65C13F682AB6BBD062A2979DFFF /* Release */ = {
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 42ED2D62DA083E33EB1385A582D6C6D1 /* Pods-Thriftaca-ThriftacaUITests.release.xcconfig */;
 			buildSettings = {
@@ -963,10 +1343,18 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		79FDB89F6CA57D6734D528EAF266BD7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 894E729BDE62B0B385ED8F2EA3D8B373 /* Alamofire.release.xcconfig */;
 			buildSettings = {
+=======
+		8FD61AE4DBD860FAB692D40E4A427FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C19E606A936537662FFDB7AD060FA995 /* Pods-Thriftaca.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -976,15 +1364,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-Thriftaca/Pods-Thriftaca-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+<<<<<<< HEAD
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -992,6 +1387,17 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.5;
+=======
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Thriftaca/Pods-Thriftaca.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1127,6 +1533,7 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		AC2123002AF0526086AAFA70A22AF7DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 396B2C2FF96D8423F0CFCD62E1991157 /* Pods-Thriftaca.debug.xcconfig */;
@@ -1167,6 +1574,11 @@
 		CB8A79F7382B0A1227C38D59E7968EEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C675CAE024FE8C74FF21534E66D39148 /* SnapKit.debug.xcconfig */;
+=======
+		CB8A79F7382B0A1227C38D59E7968EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1180,7 +1592,11 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1199,9 +1615,15 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		D576C3003BCC1D3CFDA00E6222894912 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB61C14E91EB5FA24A732F5BD8D0DC26 /* Pods-ThriftacaTests.debug.xcconfig */;
+=======
+		D2073161393D4F299CFCF859830B3FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 387453C9354C7AF8CE5C5A6BC3F48ECA /* Pods-Thriftaca-ThriftacaUITests.debug.xcconfig */;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1213,7 +1635,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< HEAD
 				INFOPLIST_FILE = "Target Support Files/Pods-ThriftacaTests/Pods-ThriftacaTests-Info.plist";
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-Thriftaca-ThriftacaUITests/Pods-Thriftaca-ThriftacaUITests-Info.plist";
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1222,7 +1648,11 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+<<<<<<< HEAD
 				MODULEMAP_FILE = "Target Support Files/Pods-ThriftacaTests/Pods-ThriftacaTests.modulemap";
+=======
+				MODULEMAP_FILE = "Target Support Files/Pods-Thriftaca-ThriftacaUITests/Pods-Thriftaca-ThriftacaUITests.modulemap";
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1236,9 +1666,15 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		DC9C0FBAB22985711BE2964C977D8CB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 387453C9354C7AF8CE5C5A6BC3F48ECA /* Pods-Thriftaca-ThriftacaUITests.debug.xcconfig */;
+=======
+		D576C3003BCC1D3CFDA00E6222894912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB61C14E91EB5FA24A732F5BD8D0DC26 /* Pods-ThriftacaTests.debug.xcconfig */;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1250,7 +1686,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+<<<<<<< HEAD
 				INFOPLIST_FILE = "Target Support Files/Pods-Thriftaca-ThriftacaUITests/Pods-Thriftaca-ThriftacaUITests-Info.plist";
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-ThriftacaTests/Pods-ThriftacaTests-Info.plist";
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1259,7 +1699,11 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
+<<<<<<< HEAD
 				MODULEMAP_FILE = "Target Support Files/Pods-Thriftaca-ThriftacaUITests/Pods-Thriftaca-ThriftacaUITests.modulemap";
+=======
+				MODULEMAP_FILE = "Target Support Files/Pods-ThriftacaTests/Pods-ThriftacaTests.modulemap";
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1273,6 +1717,7 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		DDE66E9EF2650949C1F28ED6BFEEEFED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E163353A853B951DFE8C8D3AA5736A50 /* Alamofire.debug.xcconfig */;
@@ -1311,6 +1756,11 @@
 		DFFD31690F9CC8449FD1F803388E1D46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAAAE1B69E380BDBA068C5A251A87AA0 /* SnapKit.release.xcconfig */;
+=======
+		DFFD31690F9CC8449FD1F803388E1D46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1324,7 +1774,11 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1344,9 +1798,15 @@
 			};
 			name = Release;
 		};
+<<<<<<< HEAD
 		EDF4B771F547A938BAC8AB1EF23E20F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C19E606A936537662FFDB7AD060FA995 /* Pods-Thriftaca.release.xcconfig */;
+=======
+		E9A270495D1211CFED7AA20CBA034B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 396B2C2FF96D8423F0CFCD62E1991157 /* Pods-Thriftaca.debug.xcconfig */;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1376,20 +1836,35 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+<<<<<<< HEAD
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+=======
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		20AA1A08A5D7A458B1FEA90AC9496F18 /* Build configuration list for PBXNativeTarget "Pods-Thriftaca-ThriftacaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC9C0FBAB22985711BE2964C977D8CB3 /* Debug */,
 				37EF4E4C8AE65DB022443CBD3B765AD3 /* Release */,
+=======
+		2B787352D9A991E20FE3E1A6CAFF4255 /* Build configuration list for PBXNativeTarget "Pods-Thriftaca-ThriftacaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2073161393D4F299CFCF859830B3FB3 /* Debug */,
+				13C3E65C13F682AB6BBD062A2979DFFF /* Release */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1421,6 +1896,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		9C98220D3187BF01A20E296DC128BED4 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1435,6 +1911,13 @@
 			buildConfigurations = (
 				AC2123002AF0526086AAFA70A22AF7DA /* Debug */,
 				EDF4B771F547A938BAC8AB1EF23E20F1 /* Release */,
+=======
+		A6E69270EC52CA1EABB2C07FC4392716 /* Build configuration list for PBXNativeTarget "Pods-Thriftaca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9A270495D1211CFED7AA20CBA034B1E /* Debug */,
+				8FD61AE4DBD860FAB692D40E4A427FF8 /* Release */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

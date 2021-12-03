@@ -23,7 +23,11 @@ class homeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         view.backgroundColor = UIColor(red: 229/255, green: 204/255, blue: 255/255, alpha: 1.0)
+=======
+        view.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1)
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
         title = "Home!"
         
         heading.text = "Home"
@@ -40,7 +44,10 @@ class homeViewController: UIViewController {
             make.height.equalTo(50)
             make.width.equalTo(175)
         }
+<<<<<<< HEAD
         
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
     }
 }
 

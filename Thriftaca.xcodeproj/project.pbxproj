@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		07F245FF1DA4254AEB296A4C /* Pods_Thriftaca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F04D80E8D9278781A7E2A88 /* Pods_Thriftaca.framework */; };
+<<<<<<< HEAD
 		7B3240EB27598866002D7D81 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3240EA27598866002D7D81 /* User.swift */; };
 		7B6332D02758317800E91775 /* specificItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6332CF2758317800E91775 /* specificItemViewController.swift */; };
 		7B6332D227583AE900E91775 /* addProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6332D127583AE900E91775 /* addProductViewController.swift */; };
 		7B6332D427585A4C00E91775 /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6332D327585A4C00E91775 /* PickerController.swift */; };
 		7B6332D6275860F000E91775 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6332D5275860F000E91775 /* NetworkManager.swift */; };
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		7BFF8E3D27404D5D004AD201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E3C27404D5D004AD201 /* AppDelegate.swift */; };
 		7BFF8E3F27404D5D004AD201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E3E27404D5D004AD201 /* SceneDelegate.swift */; };
 		7BFF8E4127404D5D004AD201 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E4027404D5D004AD201 /* ViewController.swift */; };
@@ -22,6 +25,10 @@
 		7BFF8E5E27404D5F004AD201 /* ThriftacaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E5D27404D5F004AD201 /* ThriftacaUITests.swift */; };
 		7BFF8E6027404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF8E5F27404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift */; };
 		B4E430E50F6DC3F97B4893F8 /* Pods_Thriftaca_ThriftacaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6659D8FA6D3965F39B626828 /* Pods_Thriftaca_ThriftacaUITests.framework */; };
+<<<<<<< HEAD
+=======
+		BF79717D2758B84D00B08495 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79717C2758B84D00B08495 /* PushViewController.swift */; };
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		BFDA2464274AFF1C00144708 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA2463274AFF1C00144708 /* Item.swift */; };
 		C6152AC527567053006438B5 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6152AC427567053006438B5 /* Filter.swift */; };
 		C6152AC7275672A3006438B5 /* filterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6152AC6275672A3006438B5 /* filterCollectionViewCell.swift */; };
@@ -60,11 +67,14 @@
 		44E05CAB5762CC6FF3E42F30 /* Pods_ThriftacaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThriftacaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6659D8FA6D3965F39B626828 /* Pods_Thriftaca_ThriftacaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thriftaca_ThriftacaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7332A6C9B7D1182C79CAF148 /* Pods-Thriftaca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thriftaca.release.xcconfig"; path = "Target Support Files/Pods-Thriftaca/Pods-Thriftaca.release.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		7B3240EA27598866002D7D81 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7B6332CF2758317800E91775 /* specificItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = specificItemViewController.swift; sourceTree = "<group>"; };
 		7B6332D127583AE900E91775 /* addProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addProductViewController.swift; sourceTree = "<group>"; };
 		7B6332D327585A4C00E91775 /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
 		7B6332D5275860F000E91775 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		7BFF8E3927404D5D004AD201 /* Thriftaca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thriftaca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFF8E3C27404D5D004AD201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BFF8E3E27404D5D004AD201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +88,10 @@
 		7BFF8E5D27404D5F004AD201 /* ThriftacaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftacaUITests.swift; sourceTree = "<group>"; };
 		7BFF8E5F27404D5F004AD201 /* ThriftacaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThriftacaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A54F0551B3AE4D0C0373A5B3 /* Pods-Thriftaca-ThriftacaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thriftaca-ThriftacaUITests.release.xcconfig"; path = "Target Support Files/Pods-Thriftaca-ThriftacaUITests/Pods-Thriftaca-ThriftacaUITests.release.xcconfig"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		BF79717C2758B84D00B08495 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 		BFDA2463274AFF1C00144708 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C6152AC427567053006438B5 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		C6152AC6275672A3006438B5 /* filterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filterCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				CF6CA37B274A036A008E3058 /* Utils */,
+<<<<<<< HEAD
 				7BFF8E3C27404D5D004AD201 /* AppDelegate.swift */,
 				7BFF8E3E27404D5D004AD201 /* SceneDelegate.swift */,
 				7BFF8E4027404D5D004AD201 /* ViewController.swift */,
@@ -175,6 +190,23 @@
 				7B6332D327585A4C00E91775 /* PickerController.swift */,
 				7B6332D5275860F000E91775 /* NetworkManager.swift */,
 				7B3240EA27598866002D7D81 /* User.swift */,
+=======
+				BF79717C2758B84D00B08495 /* PushViewController.swift */,
+				C6E4D376274A8B5D00F44FC3 /* itemCollectionViewController.swift */,
+				BFDA2463274AFF1C00144708 /* Item.swift */,
+				C6E4D378274A8E1C00F44FC3 /* itemCollectionViewCell.swift */,
+				C6152AC6275672A3006438B5 /* filterCollectionViewCell.swift */,
+				C6152AC427567053006438B5 /* Filter.swift */,
+				CF6CA380274A08FD008E3058 /* HomeViewController.swift */,
+				7BFF8E4027404D5D004AD201 /* ViewController.swift */,
+				C63D39792748903200973D3C /* logInViewController.swift */,
+				CF6CA37E274A0667008E3058 /* RegisterViewController.swift */,
+				7BFF8E4527404D5F004AD201 /* Assets.xcassets */,
+				7BFF8E4727404D5F004AD201 /* LaunchScreen.storyboard */,
+				7BFF8E4A27404D5F004AD201 /* Info.plist */,
+				7BFF8E3C27404D5D004AD201 /* AppDelegate.swift */,
+				7BFF8E3E27404D5D004AD201 /* SceneDelegate.swift */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 			);
 			path = Thriftaca;
 			sourceTree = "<group>";
@@ -452,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				7B6332D427585A4C00E91775 /* PickerController.swift in Sources */,
 				BFDA2464274AFF1C00144708 /* Item.swift in Sources */,
 				CF6CA37D274A037B008E3058 /* Utils.swift in Sources */,
@@ -460,13 +493,24 @@
 				C63D397A2748903200973D3C /* logInViewController.swift in Sources */,
 				7BFF8E4127404D5D004AD201 /* ViewController.swift in Sources */,
 				7B3240EB27598866002D7D81 /* User.swift in Sources */,
+=======
+				BFDA2464274AFF1C00144708 /* Item.swift in Sources */,
+				BF79717D2758B84D00B08495 /* PushViewController.swift in Sources */,
+				CF6CA37D274A037B008E3058 /* Utils.swift in Sources */,
+				C6152AC527567053006438B5 /* Filter.swift in Sources */,
+				C63D397A2748903200973D3C /* logInViewController.swift in Sources */,
+				7BFF8E4127404D5D004AD201 /* ViewController.swift in Sources */,
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				C6E4D377274A8B5D00F44FC3 /* itemCollectionViewController.swift in Sources */,
 				C6152AC7275672A3006438B5 /* filterCollectionViewCell.swift in Sources */,
 				C6E4D379274A8E1C00F44FC3 /* itemCollectionViewCell.swift in Sources */,
 				CF6CA37F274A0667008E3058 /* RegisterViewController.swift in Sources */,
 				7BFF8E3D27404D5D004AD201 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				7B6332D227583AE900E91775 /* addProductViewController.swift in Sources */,
 				7B6332D02758317800E91775 /* specificItemViewController.swift in Sources */,
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 				CF6CA381274A08FD008E3058 /* HomeViewController.swift in Sources */,
 				7BFF8E3F27404D5D004AD201 /* SceneDelegate.swift in Sources */,
 			);

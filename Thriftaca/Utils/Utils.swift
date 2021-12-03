@@ -8,7 +8,10 @@
 import Foundation
 import UIKit
 import SnapKit
+<<<<<<< HEAD
 import Alamofire
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 
 class TextFieldWithPadding: UITextField {
     var textPadding = UIEdgeInsets(

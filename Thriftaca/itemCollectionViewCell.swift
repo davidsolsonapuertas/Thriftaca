@@ -3,7 +3,10 @@
 //  Thriftaca
 //
 //  Created by JJ on 11/21/21.
+<<<<<<< HEAD
 //
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 
 import UIKit
 
@@ -14,6 +17,7 @@ class itemCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect){
         super.init(frame: frame)
+<<<<<<< HEAD
 
         itemPrice.font = .systemFont(ofSize: 15)
         itemPrice.textColor = .black
@@ -27,6 +31,23 @@ class itemCollectionViewCell: UICollectionViewCell {
         
         contentView.layer.cornerRadius = 8
         contentView.clipsToBounds = false
+=======
+        contentView.layer.cornerRadius = 8
+        contentView.clipsToBounds = false
+
+        itemPrice.font = UIFont(name: "Futura Bold", size: 15)
+        itemPrice.textColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
+        itemPrice.textAlignment = .left
+        itemPrice.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(itemPrice)
+        
+        itemName.font = UIFont(name: "Futura", size: 13)
+        itemName.textColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1)
+        itemName.textAlignment = .left
+        itemName.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(itemName)
+        
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
         itemImageView.contentMode = .scaleAspectFit
         itemImageView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(itemImageView)
@@ -36,8 +57,13 @@ class itemCollectionViewCell: UICollectionViewCell {
     
     func configure(for item: Item){
         itemPrice.text = "$\(item.price)"
+<<<<<<< HEAD
         itemName.text = item.post_title
         itemImageView.image = UIImage(named: item.image_url)
+=======
+        itemName.text = item.name
+        itemImageView.image = UIImage(named: item.image)
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
     }
     
     func setUpConstraints(){
@@ -50,6 +76,7 @@ class itemCollectionViewCell: UICollectionViewCell {
             itemImageView.trailingAnchor.constraint(equalTo:contentView.trailingAnchor)
         ])
         NSLayoutConstraint.activate([
+<<<<<<< HEAD
             itemPrice.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             itemPrice.topAnchor.constraint(equalTo: itemImageView.bottomAnchor),
             itemPrice.heightAnchor.constraint(equalToConstant: labelHeight)
@@ -58,6 +85,15 @@ class itemCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             itemName.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             itemName.topAnchor.constraint(equalTo: itemPrice.bottomAnchor),
+=======
+            itemPrice.topAnchor.constraint(equalTo: itemImageView.bottomAnchor, constant: 10),
+            itemPrice.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            itemPrice.heightAnchor.constraint(equalToConstant: labelHeight)
+        ])
+        NSLayoutConstraint.activate([
+            itemName.topAnchor.constraint(equalTo: itemPrice.bottomAnchor),
+            itemName.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
             itemName.heightAnchor.constraint(equalToConstant: labelHeight)
         ])
     }

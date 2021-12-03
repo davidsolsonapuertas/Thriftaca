@@ -1,2 +1,5 @@
+<<<<<<< HEAD
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework
+=======
+>>>>>>> 1b4d611c0fd6c46ce3b29eee9671b844e9f16185
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework
