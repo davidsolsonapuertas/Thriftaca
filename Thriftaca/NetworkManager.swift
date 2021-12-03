@@ -14,7 +14,8 @@ class Result: Codable {
 
 
 class NetworkManager {
-
+    
+    private static var sessionToken: String = ""
     static let endpoint = "https://thriftacahackchallenge.herokuapp.com"
     
     static func loginUser(email: String, password: String, completion: @escaping (UserResult) -> Void) {
@@ -28,6 +29,7 @@ class NetworkManager {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
                 if let postResponse = try? jsonDecoder.decode(UserResult.self, from: data) {
+                    sessionToken = postResponse.session_token
                     completion(postResponse)
                 }
             case .failure(let error):
@@ -57,13 +59,16 @@ class NetworkManager {
     }
     
     static func getAllItems(completion: @escaping ([Item]) -> Void) {
-        AF.request("\(endpoint)/posts/", method: .get).validate().responseData { response in
+        AF.request("\(endpoint)/get/", method: .get).validate().responseData { response in
             switch response.result {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
-                jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-                if let postResponse = try? jsonDecoder.decode(ItemsResponse.self, from: data) {
+                do {
+                    let postResponse = try jsonDecoder.decode(ItemsResponse.self, from: data)
                     completion(postResponse.posts)
+                }
+                catch {
+                    print(error)
                 }
             case .failure(let error):
                 print(error)
@@ -79,8 +84,12 @@ class NetworkManager {
             "description": description,
             "image_url": image_url,
         ]
+        
+        let headers: HTTPHeaders = [
+                    "Authorization": "Bearer \(sessionToken)",
+                    "Content-Type": "application/json" ]
 
-        AF.request("\(endpoint)/post/", method: .post, parameters: parameters, encoding: JSONEncoding.default).validate().responseData { response in
+        AF.request("\(endpoint)/post/", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).validate().responseData { response in
             switch response.result {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()

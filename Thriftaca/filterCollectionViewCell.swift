@@ -1,10 +1,3 @@
-//
-//  filterCollectionViewCell.swift
-//  Thriftaca
-//
-//  Created by JJ on 11/30/21.
-//
-
 import UIKit
 import SnapKit
 
@@ -12,16 +5,20 @@ class filterCollectionViewCell: UICollectionViewCell {
     private var filterLabel = UILabel()
     
     override init(frame: CGRect) {
-        super .init(frame: frame)
+        super.init(frame: frame)
         
-        contentView.layer.cornerRadius = 20
         contentView.backgroundColor = .clear
+        contentView.clipsToBounds = true
+        
+        filterLabel.font = UIFont(name: "Futura Bold", size: 15)
+        filterLabel.textColor = UIColor(red: 134/255, green: 38/255, blue: 51/255, alpha: 1)
+        filterLabel.adjustsFontSizeToFitWidth = true
+        filterLabel.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
         filterLabel.contentMode = .scaleAspectFit
-        filterLabel.font = .systemFont(ofSize: 20)
-        filterLabel.textColor = .darkGray
+        filterLabel.textAlignment = .center
+        filterLabel.layer.cornerRadius = 20
         filterLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(filterLabel)
-        
         setupConstraints()
     }
     
@@ -33,10 +30,12 @@ class filterCollectionViewCell: UICollectionViewCell {
         filterLabel.text = filter.getLabel()
         
         if filter.isSelected == true{
-            filterLabel.backgroundColor = .white
+            filterLabel.backgroundColor = UIColor(red: 134/255, green: 38/255, blue: 51/255, alpha: 1)
+            filterLabel.textColor = UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1)
         }
         else{
-            filterLabel.backgroundColor = UIColor(red: 229/255, green: 204/255, blue: 255/255, alpha: 1.0)
+            filterLabel.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+            filterLabel.textColor = UIColor(red: 134/255, green: 38/255, blue: 51/255, alpha: 1)
         }
     }
     
@@ -48,6 +47,4 @@ class filterCollectionViewCell: UICollectionViewCell {
             filterLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
         ])
     }
-    
-    
 }

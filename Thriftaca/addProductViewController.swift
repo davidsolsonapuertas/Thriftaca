@@ -12,8 +12,8 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
     
     var name = TextFieldWithPadding()
     var category = TextFieldWithPadding()
+    var descriptionField = TextFieldWithPadding()
     var price = TextFieldWithPadding()
-    //var description = TextFieldWithPadding()
     var formatter: NumberFormatter!
     var image: String = ""
     
@@ -25,6 +25,8 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround() 
         title = "Add product"
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
@@ -36,11 +38,17 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
         name.layer.cornerRadius = 5
         view.addSubview(name)
         
-        category.placeholder = "Name"
+        category.placeholder = "Category"
         category.backgroundColor = .white
         category.adjustsFontSizeToFitWidth = true
         category.layer.cornerRadius = 5
         view.addSubview(category)
+        
+        descriptionField.placeholder = "Description"
+        descriptionField.backgroundColor = .white
+        descriptionField.adjustsFontSizeToFitWidth = true
+        descriptionField.layer.cornerRadius = 5
+        view.addSubview(descriptionField)
         
         formatter = NumberFormatter()
         formatter.numberStyle = .decimal
@@ -74,21 +82,21 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
         setupConstraints()
     }
     
-    @objc func goToCollection(){
-        let collectionViewController = itemCollectionViewController()
-        navigationController?.pushViewController(collectionViewController, animated: true)
-        
-    }
-    
     @objc func sendForm(){
         if (imageView.image != nil) {
             NetworkManager.uploadImage(image: imageView.image!) { res in
                 self.image = res
             }
         }
-        NetworkManager.createProduct(post_title: name.text!, category: category.text!, price: Double(price.text!)!, description: "hello", image_url: image) {
-            res in
-            print(res)
+        if (name.text != "" && category.text != "" && price.text != "" && image != "" && descriptionField.text != "") {
+            NetworkManager.createProduct(post_title: name.text!, category: category.text!, price: Double(price.text!)!, description: descriptionField.text!, image_url: image) {
+                res in
+                if (res.image_url.count > 0) {
+                    let vc = itemCollectionViewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    //vc.itemCollectionView.reloadData()
+                }
+            }
         }
     }
     
@@ -117,8 +125,14 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
             make.width.equalTo(300)
             make.height.equalTo(40)
         }
-        category.snp.makeConstraints { make in
+        descriptionField.snp.makeConstraints { make in
             make.top.equalTo(name.snp_bottomMargin).offset(50)
+            make.width.equalTo(300)
+            make.height.equalTo(40)
+            make.centerX.equalTo(self.view)
+        }
+        category.snp.makeConstraints { make in
+            make.top.equalTo(descriptionField.snp_bottomMargin).offset(50)
             make.width.equalTo(300)
             make.height.equalTo(40)
             make.centerX.equalTo(self.view)

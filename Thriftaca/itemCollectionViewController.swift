@@ -14,8 +14,8 @@ protocol UpdateNameDelegate: AnyObject {
 
 class itemCollectionViewController: UIViewController {
     
-    private var itemCollectionView: UICollectionView!
-    private var filterCollectionView: UICollectionView!
+    var itemCollectionView: UICollectionView!
+    var filterCollectionView: UICollectionView!
     private var addButton = UIButton()
     private let itemReuseIdentifier = "itemReuseIdentifier"
     private let filterReuseIdentifier = "filterReuseIdentifer"
@@ -44,14 +44,16 @@ class itemCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getAllPosts()
+        
         // This will remove the back button so that you cannot go back once you log in or register
         self.navigationItem.leftBarButtonItem = nil;
         self.navigationItem.hidesBackButton = true;
         self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false;
         self.navigationController!.interactivePopGestureRecognizer!.isEnabled = false;
         
-        title = "Items"
-        view.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 204/255, alpha: 1.0)
+        title = "Shop"
+                view.backgroundColor = UIColor(red: 250/255, green: 250/255, blue: 250/255, alpha: 1)
         
         let itemsLayout = UICollectionViewFlowLayout()
         itemsLayout.minimumLineSpacing = cellPadding
@@ -101,6 +103,7 @@ class itemCollectionViewController: UIViewController {
     }
     
     func getAllPosts() {
+        print("hey")
         NetworkManager.getAllItems() {items in
             self.Items = items
             self.items = items
@@ -109,27 +112,27 @@ class itemCollectionViewController: UIViewController {
     }
 
     func setupConstraints(){
-        let itemListPadding: CGFloat = 12
-        NSLayoutConstraint.activate([
-            filterCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            filterCollectionView.heightAnchor.constraint(equalToConstant: 50),
-            filterCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            filterCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
-        NSLayoutConstraint.activate([
-            itemCollectionView.topAnchor.constraint(equalTo: filterCollectionView.bottomAnchor),
-            itemCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: itemListPadding),
-            itemCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -itemListPadding + 20),
-            itemCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -itemListPadding)
-//            itemCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: itemListPadding),
-//            itemCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -itemListPadding + 20),
-//            itemCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -itemListPadding)
-        ])
-        NSLayoutConstraint.activate([
-            addButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
-            addButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40)
-        ])
-    }
+           let itemListPadding: CGFloat = 12
+           NSLayoutConstraint.activate([
+               filterCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+               filterCollectionView.heightAnchor.constraint(equalToConstant: 50),
+               filterCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+               filterCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+           ])
+           NSLayoutConstraint.activate([
+               itemCollectionView.topAnchor.constraint(equalTo: filterCollectionView.bottomAnchor),
+               itemCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: itemListPadding),
+               itemCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -itemListPadding + 20),
+               itemCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -itemListPadding)
+           ])
+           NSLayoutConstraint.activate([
+               addButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+               addButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40),
+               addButton.heightAnchor.constraint(equalToConstant: 50),
+               addButton.widthAnchor.constraint(equalToConstant: 100)
+               
+           ])
+       }
 }
 
 extension itemCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate{
