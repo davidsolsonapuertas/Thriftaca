@@ -37,30 +37,6 @@ class itemCollectionViewController: UIViewController {
         Filter(filterName: "School Supplies")
     ]
     
-    private let Items: [Item] = [
-        Item(image:"1", price: 15, name: "shirt", category: "Shirts"),
-        Item(image:"2", price: 40, name: "fridge", category: "Electronics"),
-        Item(image:"3", price: 15, name: "album", category: "Fandoms"),
-        Item(image:"4", price: 60, name: "shoes", category: "Shoes"),
-        Item(image:"5", price: 80, name: "calculator", category: "School Supplies"),
-        Item(image:"6", price: 25, name: "hoodie", category: "Hoodies"),
-        Item(image:"7", price: 20, name: "phone case", category: "Accesories"),
-        Item(image:"8", price: 900, name: "MacBook", category: "Electronics"),
-        Item(image:"9", price: 15, name: "lamp", category: "Eletronics")
-    ]
-    //work and manipulate with this one
-    private var items: [Item] = [
-        Item(image:"1", price: 15, name: "shirt", category: "Shirts"),
-        Item(image:"2", price: 40, name: "fridge", category: "Electronics"),
-        Item(image:"3", price: 15, name: "album", category: "Fandoms"),
-        Item(image:"4", price: 60, name: "shoes", category: "Shoes"),
-        Item(image:"5", price: 80, name: "calculator", category: "School Supplies"),
-        Item(image:"6", price: 25, name: "hoodie", category: "Hoodies"),
-        Item(image:"7", price: 20, name: "phone case", category: "Accesories"),
-        Item(image:"8", price: 900, name: "MacBook", category: "Electronics"),
-        Item(image:"9", price: 15, name: "lamp", category: "Eletronics")
-    ]
-    
     private var selected: [String] = []
     
     override func viewDidLoad() {

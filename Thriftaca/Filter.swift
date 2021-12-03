@@ -19,7 +19,4 @@ class Filter {
     func getLabel() -> String{
         return filterName
     }
-    
-    
-
 }

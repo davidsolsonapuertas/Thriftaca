@@ -74,7 +74,7 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
     
     @objc func sendForm(){
         NetworkManager.uploadImage(image: imageView.image!) { res in
-            print(res)
+            
         }
     }
     

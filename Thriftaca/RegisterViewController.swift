@@ -18,6 +18,7 @@ class registerViewController: UIViewController {
     var password = TextFieldWithPadding()
     var repeatPassword = TextFieldWithPadding()
     var email = TextFieldWithPadding()
+    var alert = UIAlertController(title: "Error", message: "Register failed.", preferredStyle: .alert)
     
     var enter = UIButton()
     
@@ -34,16 +35,20 @@ class registerViewController: UIViewController {
         username.layer.cornerRadius = 5
         view.addSubview(username)
         
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
         password.placeholder = "Enter password"
         password.backgroundColor = .white
         password.adjustsFontSizeToFitWidth = true
         password.layer.cornerRadius = 5
+        password.isSecureTextEntry = true
         view.addSubview(password)
         
         repeatPassword.placeholder = "Repeat password"
         repeatPassword.backgroundColor = .white
         repeatPassword.adjustsFontSizeToFitWidth = true
         repeatPassword.layer.cornerRadius = 5
+        repeatPassword.isSecureTextEntry = true
         view.addSubview(repeatPassword)
         
         email.placeholder = "Enter email"
@@ -67,11 +72,24 @@ class registerViewController: UIViewController {
         setupConstraints()
     }
     
+    @objc func presentAlert() {
+        self.present(self.alert, animated: true)
+    }
+    
+    
     @objc func buttonTapped() {
-//        if (username.text != "" && password.text != "" && email.text != "" &&  repeatPassword.text != password.text) {
-            let itemCollectionViewController = itemCollectionViewController()
-            navigationController?.pushViewController(itemCollectionViewController, animated: true)
-        //}
+        if (username.text != "" && password.text != "" && email.text != "" &&  repeatPassword.text == password.text) {
+            NetworkManager.createUser(email: email.text!, password: password.text!, contact_info: username.text!) {res in
+                if (res.session_token.count > 0) {
+                    let itemCollectionViewController = itemCollectionViewController()
+                    self.navigationController?.pushViewController(itemCollectionViewController, animated: true)
+                } else {
+                    self.presentAlert()
+                }
+            }
+        } else {
+            self.presentAlert()
+        }
     }
     
     func setupConstraints(){

@@ -36,8 +36,8 @@ class itemCollectionViewCell: UICollectionViewCell {
     
     func configure(for item: Item){
         itemPrice.text = "$\(item.price)"
-        itemName.text = item.name
-        itemImageView.image = UIImage(named: item.image)
+        itemName.text = item.post_title
+        itemImageView.image = UIImage(named: item.image_url)
     }
     
     func setUpConstraints(){

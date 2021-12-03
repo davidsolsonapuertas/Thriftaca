@@ -20,8 +20,9 @@ class loginViewController: UIViewController {
 
     var heading = UILabel()
     
-    var username = TextFieldWithPadding()
+    var email = TextFieldWithPadding()
     var password = TextFieldWithPadding()
+    var alert = UIAlertController(title: "Error", message: "Login failed.", preferredStyle: .alert)
     
     var enter = UIButton()
     
@@ -32,17 +33,18 @@ class loginViewController: UIViewController {
         view.backgroundColor = UIColor(red: 229/255, green: 204/255, blue: 255/255, alpha: 1.0)
         title = "Login"
         
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
         heading.text = "THRIFTACA"
         heading.font = UIFont(name:"TrebuchetMS-Bold", size: 30)
         heading .textColor = UIColor(red: 145/255, green: 32/255, blue: 32/255, alpha: 1.0)
         view.addSubview(heading)
         
-        
-        username.placeholder = "Enter username"
-        username.backgroundColor = .white
-        username.adjustsFontSizeToFitWidth = true
-        username.layer.cornerRadius = 5
-        view.addSubview(username)
+        email.placeholder = "Enter email"
+        email.backgroundColor = .white
+        email.adjustsFontSizeToFitWidth = true
+        email.layer.cornerRadius = 5
+        view.addSubview(email)
         
         password.placeholder = "Enter password"
         password.backgroundColor = .white
@@ -54,7 +56,7 @@ class loginViewController: UIViewController {
         enter.setTitle("Log In", for: .normal)
         enter.setTitleColor(.purple, for: .normal)
         enter.layer.cornerRadius = 20
-        enter.addTarget(self, action: #selector(goToCollection), for: .touchUpInside)
+        enter.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         view.addSubview(enter)
         
         phImage.image = UIImage(named: "picPH")
@@ -64,23 +66,35 @@ class loginViewController: UIViewController {
         view.addSubview(phImage)
         setupConstraints()
     }
-    @objc func goToCollection(){
-        let collectionViewController = itemCollectionViewController()
-        navigationController?.pushViewController(collectionViewController, animated: true)
-        
+    
+    @objc func presentAlert() {
+        self.present(self.alert, animated: true)
     }
     
-    
+    @objc func buttonTapped() {
+        if (email.text != "" && password.text != "") {
+            NetworkManager.loginUser(email: email.text!, password: password.text!) {res in
+                if (res.session_token.count > 0) {
+                    let itemCollectionViewController = itemCollectionViewController()
+                    self.navigationController?.pushViewController(itemCollectionViewController, animated: true)
+                } else {
+                    self.presentAlert()
+                }
+            }
+        } else {
+            self.presentAlert()
+        }
+    }
     
     func setupConstraints(){
-        username.snp.makeConstraints { make in
+        email.snp.makeConstraints { make in
             make.centerY.equalTo(phImage.snp_bottomMargin).offset(60)
             make.centerX.equalTo(self.view)
             make.width.equalTo(300)
             make.height.equalTo(40)
         }
         password.snp.makeConstraints { make in
-            make.top.equalTo(username.snp_bottomMargin).offset(50)
+            make.top.equalTo(email.snp_bottomMargin).offset(50)
             make.width.equalTo(300)
             make.height.equalTo(40)
             make.centerX.equalTo(self.view)
