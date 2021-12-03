@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Item {
+class Item: Codable {
     var post_title: String
     var category: String
     var price: Double
@@ -24,10 +24,7 @@ class Item {
     }
 }
 
-class ItemResult: Codable {
-    var post_title: String
-    var category: String
-    var price: Double
-    var description: String
-    var image_url: String
+
+class ItemsResponse: Codable {
+    var posts: [Item]
 }

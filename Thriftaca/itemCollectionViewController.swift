@@ -37,6 +37,8 @@ class itemCollectionViewController: UIViewController {
         Filter(filterName: "School Supplies")
     ]
     
+    private var Items: [Item] = []
+    private var items: [Item] = []
     private var selected: [String] = []
     
     override func viewDidLoad() {
@@ -96,9 +98,15 @@ class itemCollectionViewController: UIViewController {
     @objc func buttonTapped() {
         let vc = addProductViewController()
          navigationController?.pushViewController(vc, animated: true)
-        print("here")
     }
     
+    func getAllPosts() {
+        NetworkManager.getAllItems() {items in
+            self.Items = items
+            self.items = items
+            self.itemCollectionView.reloadData()
+        }
+    }
 
     func setupConstraints(){
         let itemListPadding: CGFloat = 12
@@ -123,6 +131,7 @@ class itemCollectionViewController: UIViewController {
         ])
     }
 }
+
 extension itemCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate{
     
 //    func numberOfSections(in collectionView: UICollectionView) -> Int {

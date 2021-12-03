@@ -11,9 +11,11 @@ import SnapKit
 class addProductViewController: UIViewController, UITextFieldDelegate {
     
     var name = TextFieldWithPadding()
-    var price = TextFieldWithPadding()
     var category = TextFieldWithPadding()
+    var price = TextFieldWithPadding()
+    //var description = TextFieldWithPadding()
     var formatter: NumberFormatter!
+    var image: String = ""
     
     var imageView = UIImageView()
     var imagePicker: ImagePicker!
@@ -33,6 +35,12 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
         name.adjustsFontSizeToFitWidth = true
         name.layer.cornerRadius = 5
         view.addSubview(name)
+        
+        category.placeholder = "Name"
+        category.backgroundColor = .white
+        category.adjustsFontSizeToFitWidth = true
+        category.layer.cornerRadius = 5
+        view.addSubview(category)
         
         formatter = NumberFormatter()
         formatter.numberStyle = .decimal
@@ -73,8 +81,14 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func sendForm(){
-        NetworkManager.uploadImage(image: imageView.image!) { res in
-            
+        if (imageView.image != nil) {
+            NetworkManager.uploadImage(image: imageView.image!) { res in
+                self.image = res
+            }
+        }
+        NetworkManager.createProduct(post_title: name.text!, category: category.text!, price: Double(price.text!)!, description: "hello", image_url: image) {
+            res in
+            print(res)
         }
     }
     
@@ -103,8 +117,14 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
             make.width.equalTo(300)
             make.height.equalTo(40)
         }
-        price.snp.makeConstraints { make in
+        category.snp.makeConstraints { make in
             make.top.equalTo(name.snp_bottomMargin).offset(50)
+            make.width.equalTo(300)
+            make.height.equalTo(40)
+            make.centerX.equalTo(self.view)
+        }
+        price.snp.makeConstraints { make in
+            make.top.equalTo(category.snp_bottomMargin).offset(50)
             make.width.equalTo(300)
             make.height.equalTo(40)
             make.centerX.equalTo(self.view)

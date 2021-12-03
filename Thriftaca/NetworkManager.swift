@@ -56,14 +56,14 @@ class NetworkManager {
         }
     }
     
-    static func getAllItems(completion: @escaping ([Post]) -> Void) {
-        AF.request("\(host)/posts/", method: .get).validate().responseData { response in
+    static func getAllItems(completion: @escaping ([Item]) -> Void) {
+        AF.request("\(endpoint)/posts/", method: .get).validate().responseData { response in
             switch response.result {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-                if let postResponse = try? jsonDecoder.decode([Post].self, from: data) {
-                    completion(postResponse)
+                if let postResponse = try? jsonDecoder.decode(ItemsResponse.self, from: data) {
+                    completion(postResponse.posts)
                 }
             case .failure(let error):
                 print(error)
@@ -71,7 +71,7 @@ class NetworkManager {
         }
     }
     
-    static func createProduct(post_title: String, category: String, price: Double, description: String, image_url: String, completion: @escaping (ItemResult) -> Void) {
+    static func createProduct(post_title: String, category: String, price: Double, description: String, image_url: String, completion: @escaping (Item) -> Void) {
         let parameters: [String: Any] = [
             "post_title": post_title,
             "category": category,
@@ -84,7 +84,7 @@ class NetworkManager {
             switch response.result {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
-                if let postResponse = try? jsonDecoder.decode(ItemResult.self, from: data) {
+                if let postResponse = try? jsonDecoder.decode(Item.self, from: data) {
                     completion(postResponse)
                 }
             case .failure(let error):
@@ -112,7 +112,6 @@ class NetworkManager {
                     let jsonDecoder = JSONDecoder()
                     if let response = try? jsonDecoder.decode(Result.self, from: data) {
                         completion(response.url)
-                        print()
                     }
                 case .failure(let error):
                     print(error)

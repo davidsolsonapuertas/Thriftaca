@@ -11,6 +11,7 @@ class itemCollectionViewCell: UICollectionViewCell {
     private var itemImageView = UIImageView()
     private var itemPrice = UILabel()
     private var itemName = UILabel()
+    //private var user: User = new User()
     
     override init(frame: CGRect){
         super.init(frame: frame)

@@ -50,6 +50,7 @@ class loginViewController: UIViewController {
         password.backgroundColor = .white
         password.adjustsFontSizeToFitWidth = true
         password.layer.cornerRadius = 5
+        password.isSecureTextEntry = true
         view.addSubview(password)
         
         enter.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 204/255, alpha: 1.0)
