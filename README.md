@@ -1,18 +1,19 @@
 # THRIFTACA
 
-### What is Thriftaca?
+## What is Thriftaca?
 
 👚Thriftaca - a virtual thrift store for buying and selling items!
 
-## Link to Other Repos
-<Insert BE Repo>
+## Previews
 
-### Previews
+<img width="436" alt="Screen Shot 2021-12-03 at 10 02 48 PM" src="https://user-images.githubusercontent.com/60070699/144694719-463a453b-9348-48f2-b184-5aa52d7c1f92.png">
+<img width="438" alt="Screen Shot 2021-12-03 at 10 18 48 PM" src="https://user-images.githubusercontent.com/60070699/144695123-0cd2da02-cd50-4dbf-91b6-d765c8675ccd.png">
 
-<Insert image link1>
-<Insert iamge link2>
+### Link to Backend Repo
+https://github.com/derekh9896/thriftacahackchallenge
+  
 
-### What does it do?
+## What does it do?
 p.s First-time users will need to register an account.
   
 - Show a collection of items that are being sold
