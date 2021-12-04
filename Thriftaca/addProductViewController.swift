@@ -1,10 +1,3 @@
-//
-//  addProductViewController.swift
-//  Thriftaca
-//
-//  Created by David Solsona on 01/12/2021.
-//
-
 import UIKit
 import SnapKit
 
@@ -30,7 +23,7 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
         title = "Add product"
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
-        view.backgroundColor = UIColor(red: 229/255, green: 204/255, blue: 255/255, alpha: 1.0)
+        view.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1)
         
         name.placeholder = "Name"
         name.backgroundColor = .white
@@ -61,16 +54,18 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
         price.layer.cornerRadius = 5
         view.addSubview(price)
         
-        uploadImage.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 204/255, alpha: 1.0)
+        uploadImage.backgroundColor = UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1)
         uploadImage.setTitle("Upload image", for: .normal)
-        uploadImage.setTitleColor(.purple, for: .normal)
+        uploadImage.setTitleColor(.white, for: .normal)
+        uploadImage.titleLabel?.font = UIFont(name: "Futura Bold", size: 15)
         uploadImage.layer.cornerRadius = 20
         uploadImage.addTarget(self, action: #selector(showImagePicker), for: .touchUpInside)
         view.addSubview(uploadImage)
         
-        enter.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 204/255, alpha: 1.0)
+        enter.backgroundColor = UIColor(red: 30/255, green: 30/255, blue: 30/255, alpha: 1)
         enter.setTitle("Add product", for: .normal)
-        enter.setTitleColor(.purple, for: .normal)
+        enter.setTitleColor(.white, for: .normal)
+        enter.titleLabel?.font = UIFont(name: "Futura Bold", size: 15)
         enter.layer.cornerRadius = 20
         enter.addTarget(self, action: #selector(sendForm), for: .touchUpInside)
         view.addSubview(enter)
@@ -144,18 +139,17 @@ class addProductViewController: UIViewController, UITextFieldDelegate {
             make.centerX.equalTo(self.view)
         }
         enter.snp.makeConstraints { make in
-            make.top.equalTo(price.snp_bottomMargin).offset(50)
+            make.centerY.equalTo(price.snp_bottomMargin).offset(60)
             make.centerX.equalTo(self.view)
-            make.width.equalTo(100)
-            make.height.equalTo(50)
+            make.width.equalTo(300)
+            make.height.equalTo(40)
         }
         imageView.snp.makeConstraints { make in
             make.top.equalTo(view.snp_topMargin).offset(30)
             make.centerX.equalTo(self.view)
-            make.width.equalTo(225)
-            make.height.equalTo(275)
+            make.width.equalTo(200)
+            make.height.equalTo(200)
         }
-        
     }
 }
 

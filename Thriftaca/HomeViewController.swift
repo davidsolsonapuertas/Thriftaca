@@ -1,19 +1,3 @@
-//
-//  HomeViewController.swift
-//  Thriftaca
-//
-//  Created by JJ on 11/19/21.
-//
-
-//
-//  ViewController.swift
-//  Final_Project
-//
-//  Created by JJ on 11/19/21.
-//
-
-
-//*NOTE* change color theme, fonts, and picture later on
 import UIKit
 import SnapKit
 

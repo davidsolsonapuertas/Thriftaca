@@ -1,10 +1,3 @@
-//
-//  itemCollectionViewController.swift
-//  Thriftaca
-//
-//  Created by JJ on 11/21/21.
-//
-
 import UIKit
 import SnapKit
 
@@ -24,29 +17,17 @@ class itemCollectionViewController: UIViewController {
     
     var newItems: [Item] = []
     
-    private let filters: [Filter] = [
-        Filter(filterName: "Shirts"),
-        Filter(filterName: "Pants"),
-        Filter(filterName: "Hoodies"),
-        Filter(filterName: "Socks"),
-        Filter(filterName: "Accesories"),
-        Filter(filterName: "Shoes"),
-        Filter(filterName: "Cosmetics"),
-        Filter(filterName: "Fandoms"),
-        Filter(filterName: "Electronics"),
-        Filter(filterName: "School Supplies")
-    ]
-    
-    private var Items: [Item] = []
+    private var filters: [Filter] = []
+
     private var items: [Item] = []
+    private var Items: [Item] = []
     private var selected: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         getAllPosts()
-        
-        // This will remove the back button so that you cannot go back once you log in or register
+
         self.navigationItem.leftBarButtonItem = nil;
         self.navigationItem.hidesBackButton = true;
         self.navigationController?.navigationItem.backBarButtonItem?.isEnabled = false;
@@ -87,9 +68,12 @@ class itemCollectionViewController: UIViewController {
         filterCollectionView.dataSource = self
         filterCollectionView.delegate = self
         
-        addButton.setTitle("Add product", for: .normal)
-        addButton.backgroundColor = .blue
-        addButton.layer.cornerRadius = 10
+        addButton.setTitle("+", for: .normal)
+        
+        addButton.backgroundColor = UIColor(red: 134/255, green: 38/255, blue: 51/255, alpha: 1)
+        addButton.setTitleColor(UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1), for: .normal)
+        addButton.titleLabel?.font = UIFont(name: "Futura Bold", size: 40)
+        addButton.layer.cornerRadius = 35
         addButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         view.addSubview(addButton)
@@ -103,10 +87,15 @@ class itemCollectionViewController: UIViewController {
     }
     
     func getAllPosts() {
-        print("hey")
         NetworkManager.getAllItems() {items in
             self.Items = items
             self.items = items
+            items.forEach({ (item: Item) -> Void in
+                if (self.filters.filter { $0.filterName == item.category}.count == 0) {
+                    self.filters.append(Filter(filterName: item.category))
+                }
+            })
+            self.filterCollectionView.reloadData()
             self.itemCollectionView.reloadData()
         }
     }
@@ -128,8 +117,8 @@ class itemCollectionViewController: UIViewController {
            NSLayoutConstraint.activate([
                addButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
                addButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40),
-               addButton.heightAnchor.constraint(equalToConstant: 50),
-               addButton.widthAnchor.constraint(equalToConstant: 100)
+               addButton.heightAnchor.constraint(equalToConstant: 70),
+               addButton.widthAnchor.constraint(equalToConstant: 70)
                
            ])
        }
@@ -137,11 +126,6 @@ class itemCollectionViewController: UIViewController {
 
 extension itemCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate{
     
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        // If we are doing sections later, change items to a 2D array
-//        return 1
-//    }
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == itemCollectionView{
             return items.count
@@ -165,7 +149,6 @@ extension itemCollectionViewController: UICollectionViewDataSource, UICollection
         }
 }
         
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == self.itemCollectionView{
             let numItemsPerRow: CGFloat = 2.0
@@ -180,17 +163,15 @@ extension itemCollectionViewController: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         if collectionView == filterCollectionView{
             if filters[indexPath.item].isSelected == false {
-                filters[indexPath.item].isSelected.toggle()//true now
+                filters[indexPath.item].isSelected.toggle()
                 let filter = filters[indexPath.item].filterName
                 selected.append(filter)
-                
                 newItems.append(contentsOf: Items.filter{$0.category.contains(filter)})
             }
             else{
-                filters[indexPath.item].isSelected.toggle()//false now
+                filters[indexPath.item].isSelected.toggle()
                 let filter = filters[indexPath.item].filterName
                 let index = selected.firstIndex(of: filter) ?? 0
                 selected.remove(at: index)
@@ -205,42 +186,10 @@ extension itemCollectionViewController: UICollectionViewDataSource, UICollection
 
             filterCollectionView.reloadData()
             itemCollectionView.reloadData()
-            
         }
+        else if collectionView == itemCollectionView{
+                    let vc = specificViewController(image_url: Items[indexPath.item].image_url, price: String(Items[indexPath.item].price), post_title: Items[indexPath.item].post_title, category: Items[indexPath.item].category, descriptions: Items[indexPath.item].description, email: Items[indexPath.item].email, contact_info: Items[indexPath.item].contact_info)
+                    navigationController?.pushViewController(vc, animated: true)
+                }
     }
 }
-
-
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
-
-

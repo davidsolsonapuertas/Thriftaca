@@ -1,10 +1,3 @@
-//
-//  NetworkManager.swift
-//  Thriftaca
-//
-//  Created by David Solsona on 01/12/2021.
-//
-
 import Alamofire
 import Foundation
 
@@ -50,6 +43,7 @@ class NetworkManager {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
                 if let postResponse = try? jsonDecoder.decode(UserResult.self, from: data) {
+                    sessionToken = postResponse.session_token
                     completion(postResponse)
                 }
             case .failure(let error):

@@ -1,10 +1,3 @@
-//
-//  User.swift
-//  Thriftaca
-//
-//  Created by David Solsona on 02/12/2021.
-//
-
 import Foundation
 import UIKit
 

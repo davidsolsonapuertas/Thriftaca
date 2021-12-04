@@ -1,10 +1,3 @@
-//
-//  itemCollectionViewCell.swift
-//  Thriftaca
-//
-//  Created by JJ on 11/21/21.
-//
-
 import UIKit
 
 class itemCollectionViewCell: UICollectionViewCell {
@@ -15,12 +8,12 @@ class itemCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect){
         super.init(frame: frame)
 
-        itemPrice.font = .systemFont(ofSize: 15)
         itemPrice.textColor = .black
         itemPrice.translatesAutoresizingMaskIntoConstraints = false
+        itemPrice.font = UIFont(name: "Futura Bold", size: 15)
         contentView.addSubview(itemPrice)
         
-        itemName.font = .systemFont(ofSize: 15)
+        itemName.font = UIFont(name: "Futura", size: 15)
         itemName.textColor = .black
         itemName.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(itemName)
@@ -65,7 +58,6 @@ class itemCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }
 
 extension UIImageView {

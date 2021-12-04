@@ -1,10 +1,3 @@
-//
-//  Filter.swift
-//  Thriftaca
-//
-//  Created by JJ on 11/30/21.
-//
-
 import UIKit
 import Foundation
 

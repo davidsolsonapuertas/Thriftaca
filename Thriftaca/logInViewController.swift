@@ -17,6 +17,7 @@ class loginViewController: UIViewController {
         self.hideKeyboardWhenTappedAround() 
         view.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1)
         title = "Log In"
+        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Futura Bold", size: 19)!]
         
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         

@@ -1,10 +1,3 @@
-//
-//  PickerController.swift
-//  Thriftaca
-//
-//  Created by David Solsona on 01/12/2021.
-//
-
 import Foundation
 import UIKit
 

@@ -34,14 +34,14 @@ class registerViewController: UIViewController {
         phImage.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(phImage)
         
-        usernameLabel.text = "username"
+        usernameLabel.text = "phone"
         usernameLabel.textColor = UIColor(red: 100/255, green: 100/255, blue: 100/255, alpha: 1)
         usernameLabel.font = UIFont(name: "Futura Bold", size: 17)
         usernameLabel.textAlignment = .left
         usernameLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(usernameLabel)
         
-        username.placeholder = "enter username"
+        username.placeholder = "enter email"
         username.font = UIFont(name: "Futura", size: 15)
         username.backgroundColor = .white
         username.adjustsFontSizeToFitWidth = true
@@ -96,7 +96,7 @@ class registerViewController: UIViewController {
         emailLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(emailLabel)
         
-        email.placeholder = "enter email"
+        email.placeholder = "enter phone"
         email.font = UIFont(name: "Futura", size: 15)
         email.backgroundColor = .white
         email.adjustsFontSizeToFitWidth = true
@@ -145,13 +145,13 @@ class registerViewController: UIViewController {
             make.width.equalTo(125)
             make.height.equalTo(175)
         }
-        usernameLabel.snp.makeConstraints { make in
+        emailLabel.snp.makeConstraints { make in
             make.centerY.equalTo(phImage.snp_bottomMargin).offset(30)
             make.centerX.equalTo(self.view)
             make.width.equalTo(330)
             make.height.equalTo(20)
         }
-        username.snp.makeConstraints { make in
+        email.snp.makeConstraints { make in
             make.centerY.equalTo(usernameLabel.snp_bottomMargin).offset(40)
             make.centerX.equalTo(self.view)
             make.width.equalTo(330)
@@ -181,13 +181,13 @@ class registerViewController: UIViewController {
             make.width.equalTo(330)
             make.height.equalTo(40)
         }
-        emailLabel.snp.makeConstraints { make in
+        usernameLabel.snp.makeConstraints { make in
             make.centerY.equalTo(repeatPassword.snp_bottomMargin).offset(60)
             make.centerX.equalTo(self.view)
             make.width.equalTo(330)
             make.height.equalTo(20)
         }
-        email.snp.makeConstraints { make in
+        username.snp.makeConstraints { make in
             make.centerY.equalTo(emailLabel.snp_bottomMargin).offset(40)
             make.centerX.equalTo(self.view)
             make.width.equalTo(330)
